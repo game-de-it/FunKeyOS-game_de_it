@@ -9,7 +9,7 @@ FunKeyOSベースのカスタムファームウェアを継続してリリース
 ## 特徴
 ---  
 - FunKeyOS-2.3.0ベースで作られたカスタムファームウェア
-- RETROFEフロントエンドで利用できるテーマ「RetroRoomCovers」を搭載  
+- RETROFEフロントエンドに「RetroRoomCovers」テーマを搭載  
 - picodrive-funkeyベースの「GameGear pico」を搭載
 [picodrive-funkey](https://github.com/DrUm78/picodrive-funkey)を利用して新たなエミュレータとして「Game Gear pico」を作成し、既存のGame Gear(mednafen)と共存させています。  
 公式のFunkeyOSではGame Gearでスケーリングを変更できませんでしたが「Game Gear pico」を利用することでGame Gearでもスケーリングが変更可能になります。  
