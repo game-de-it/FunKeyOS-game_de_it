@@ -1,4 +1,4 @@
-# FunKeyOS-game_de_it_1
+# FunKeyOS-game_de_it
   
 
 ## リリースファイル名の改訂とご紹介  
