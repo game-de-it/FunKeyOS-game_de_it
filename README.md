@@ -1,2 +1,7 @@
-# FunKeyOS-game_de_it
-FunKeyOS-game_de_it
+# FunKeyOS-game_de_it_1
+  
+
+## リリースファイル名の改訂とご紹介  
+FunKeyOSベースのカスタムファームウェアを継続してリリースをするにあたり、  
+今回からリリースファイル名を「FunKeyOS-<形式>-<公式Ver>-game_de_it_<ナンバリング>」として生まれ変わりました！  
+新たなリリースをするたびにナンバリングの数値が増えていきます。  
