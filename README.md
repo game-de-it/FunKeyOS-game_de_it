@@ -8,6 +8,7 @@ FunKeyOSベースのカスタムファームウェアを継続してリリース
 
 ## 特徴
 ---  
+- [NEW] 「START+Aボタン」で即シャットダウンできるようになりました(ゲーム中にシャットダウンしても電源ONで再開できます)
 - FunKeyOS-2.3.0ベースで作られたカスタムファームウェア
 - RETROFEフロントエンドに「RetroRoomCovers」テーマを搭載  
 - picodrive-funkeyベースの「GameGear pico」を搭載  
