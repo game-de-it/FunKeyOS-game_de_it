@@ -1,0 +1,9 @@
+#!/bin/ash
+
+
+  if [ -d /mnt/FunKey ];then
+    mount -o rw,remount /dev/root /
+    cp /etc/fkgpiod.conf_org /etc/fkgpiod.conf
+    mount -o ro,remount /dev/root /
+fi
+
