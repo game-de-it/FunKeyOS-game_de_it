@@ -1,8 +1,10 @@
 #!/bin/ash
 
-
+/mnt/Anbernic
   if [ -d /mnt/FunKey ];then
     mount -o rw,remount /dev/root /
     cp /mnt/FunKey/fkgpiod.conf /etc/fkgpiod.conf
     mount -o ro,remount /dev/root /
+  elif [ -d /mnt/Anbernic ]; then
+    cp /mnt/Anbernic/fkgpiod.conf /etc/fkgpiod.conf
 fi
