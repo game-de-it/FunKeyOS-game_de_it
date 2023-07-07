@@ -2,12 +2,23 @@
 
 ## ●特徴
 ---  
-- [NEW!!] Ver2.0.2でUSB-DACが利用可能になり、音量調節も可能になりました（リリース内の注意点を参照してください)  
+- [NEW] Bluetoothでオーディオ出力が可能になりました  
+  - ボリューム調整はスピーカーやヘッドセット側で行ってください 
+- [NEW] picoarch(retroarchのSDL版)が利用可能になりました
+  -  対応エミュ：MSX,NES,SNES,MD,GG,PS1,GB,GBA,PCE  
+     - 32Xは既存のpicodriveを利用してください 
+  - FF(早送り)の設定手順
+    - ゲーム中に電源ボタン→ADVANCED→Options→Emulator controls→Toggle FF　でお好きなボタンに割り当ててください
+    - 設定を保存する場合はSave config→Save global config　で保存してください
+  - GBパレット(配色)の設定手順
+    -  ゲーム中に電源ボタン→ADVANCED→Options→Emulator options→GB Colorization　で変更できます
+    - GBCのパレットはInternal Palette GB　で変更可能です
+-  USB-DACが利用可能
 - 「START+Aボタン」でシャットダウンできるようになりました  
-(この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)
+(この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)  
 - FunKeyOS-2.3.0ベースで作られたカスタムファームウェア
-- RETROFEフロントエンドに「RetroRoomCovers」テーマを搭載  
-- picodrive-funkeyベースの「GameGear pico」を搭載  
+- RETROFEフロントエンドで利用できるテーマ「RetroRoomCovers」を搭載  
+- picodrive-funkeyベースの「GameGear pico」を搭載
 [picodrive-funkey](https://github.com/DrUm78/picodrive-funkey)を利用して新たなエミュレータとして「Game Gear pico」を作成し、既存のGame Gear(mednafen)と共存させています。  
 公式のFunkeyOSではGame Gearでスケーリングを変更できませんでしたが「Game Gear pico」を利用することでGame Gearでもスケーリングが変更可能になります。  
 - [システムステータス表示にてバッテリー残量を表示する機能](https://github.com/game-de-it/RGnano/blob/main/battery.md)を搭載  
@@ -18,6 +29,38 @@
 (AnbernicOSにこのファイルを置いてもアップデートは動作しません)  
   - アップデートする場合はROMファイル、サムネイル画像、セーブデータはそのまま保持されます
   - これらのアップデートイメージを適用した上で公式のアップデートイメージを適用した場合、本機能は全て削除されてしまいます
+
+## ●picoarchエミュレータ情報
+```
+●拡張子表
+fmsx(MSX)
+  [rom,mx1,mx2,dsk,cas]
+
+fceumm(NES,Disksystem)
+  [fds,nes,unf,unif]
+
+gambatte(GB,GBC)
+  [gb,gbc,dmg,zip]
+
+genesis-plus-gx(GG,MD,SMS,MEGACD)
+  [bin,gen,smd,md,cue,iso,chd,sms,gg,m3u,68k,sgd]
+
+gpsp(GBA)
+  [gba,bin,zip]
+
+mgba(GBA)
+  [gba,bin,zip]
+
+pce-fast(PCE,CD-ROM2)
+  [pce,cue,ccd,chd,toc,m3u]
+
+pcsx_rearmed(PS1)
+  [iso,bin,cue,img,mdf,pbp,toc,cbn,m3u,chd]
+
+snes9x2005(SNES)
+  [smc,fig,sfc,gd3,gd7,dx2,bsx,swc,zip]
+
+```
 
 ##  ●ダウンロード方法や使い方  
 画面右にある「Releases」からダウンロードや使い方を確認できます  
