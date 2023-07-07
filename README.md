@@ -32,6 +32,9 @@
 
 ## ●picoarchエミュレータ情報
 ```
+●BIOSファイルの格納場所について
+BIOSファイルは /mnt/FunKey/.picoarch/systemフォルダに入れてください
+
 ●拡張子表
 fmsx(MSX)
   [rom,mx1,mx2,dsk,cas]
