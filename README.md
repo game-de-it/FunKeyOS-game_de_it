@@ -2,9 +2,16 @@
 
 ## ●特徴
 ---  
-- [NEW] Bluetoothでオーディオ出力が可能になりました  
+- [NEW!!] picoarch pokeminiエミュレーターを追加しました
+- [NEW!!] ffplayで音楽と動画が再生が可能になりました
+  - SDカード内のMediaフォルダーに音楽or動画ファイルを追加してください 
+  - 再生できない形式のファイルがあるかも知れません
+  - 電源ボタンを押すと再生が停止されます(他のキー操作ができるか調査中)
+  - プレイリストのような連続再生に対応していません(調査中) 
+  -  情報提供者 [ Twitter : じゅんたろう @GameboyJuntaro ] ありがとうございます！
+- Bluetoothでオーディオ出力が可能になりました  
   - ボリューム調整はスピーカーやヘッドセット側で行ってください 
-- [NEW] picoarch(retroarchのSDL版)が利用可能になりました
+- picoarch(retroarchのSDL版)が利用可能になりました
   -  対応エミュ：MSX,NES,SNES,MD,GG,PS1,GB,GBA,PCE  
      - 32Xは既存のpicodriveを利用してください 
   - FF(早送り)の設定手順
@@ -29,41 +36,6 @@
 (AnbernicOSにこのファイルを置いてもアップデートは動作しません)  
   - アップデートする場合はROMファイル、サムネイル画像、セーブデータはそのまま保持されます
   - これらのアップデートイメージを適用した上で公式のアップデートイメージを適用した場合、本機能は全て削除されてしまいます
-
-## ●picoarchエミュレータ情報
-```
-●BIOSファイルの格納場所について
-BIOSファイルは /mnt/FunKey/.picoarch/systemフォルダに入れてください
-
-●拡張子表
-fmsx(MSX)
-  [rom,mx1,mx2,dsk,cas]
-
-fceumm(NES,Disksystem)
-  [fds,nes,unf,unif]
-
-gambatte(GB,GBC)
-  [gb,gbc,dmg,zip]
-
-genesis-plus-gx(GG,MD,SMS,MEGACD)
-  [bin,gen,smd,md,cue,iso,chd,sms,gg,m3u,68k,sgd]
-
-gpsp(GBA)
-  [gba,bin,zip]
-
-mgba(GBA)
-  [gba,bin,zip]
-
-pce-fast(PCE,CD-ROM2)
-  [pce,cue,ccd,chd,toc,m3u]
-
-pcsx_rearmed(PS1)
-  [iso,bin,cue,img,mdf,pbp,toc,cbn,m3u,chd]
-
-snes9x2005(SNES)
-  [smc,fig,sfc,gd3,gd7,dx2,bsx,swc,zip]
-
-```
 
 ##  ●ダウンロード方法や使い方  
 画面右にある「Releases」からダウンロードや使い方を確認できます  
