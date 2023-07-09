@@ -5,7 +5,7 @@
 - [NEW!!] ffplayに以下の機能を追加しました
   - ランダムプレイリスト再生
     - Mediaフォルダ内の「PlayList」というファイルを再生すると、Mediaフォルダ内にあるファイルから自動的に50曲をランダム再生します 
-    - 2バイト文字非対応のため[ファイルとフォルダをすべて連番にリネームする手順](https://github.com/game-de-it/RGnano/blob/main/rename.md)を参考にしてください 
+    - 現在2バイト文字非対応のため、再生に問題が生じた場合は[ファイルとフォルダをすべて連番にリネームする手順](https://github.com/game-de-it/RGnano/blob/main/rename.md)を参考にしてください 
   - ファイル単体再生時にシーク操作ができるようになりました
 ```
 ●ffplayキー操作一覧
