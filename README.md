@@ -2,22 +2,31 @@
 
 ## 更新情報
 ---
-- [NEW!!] gmenu2xの日本語化＆ブラック壁紙が利用できるようになりました
+- [NEW!!]  新スプラッシュ画面
+  - 提供者 [ Twitter : スネ夫さん @suneon1 ] ありがとうございます！
+  <img src="https://github.com/game-de-it/RGnano/blob/main/asset/game_it.png" width="240">  
+
+- [FIX] gmenu2xの日本語ファイルの修正
   - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
-- RG nanoで快適に動画を再生できるようにリサイズできるソフトウェア　[iPodMe日本語版](https://github.com/game-de-it/RGnano/blob/main/iPodMe.md)の紹介
-  - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
-- [NEW!!] 2バイト文字に対応しました(ROMファイルや音楽ファイルなどを日本語のまま利用できます)  
-  - 2バイト文字のROMはスクリーンショット機能が利用できません(調査中) 
-- [NEW!!] 音量の調整量を5%刻みに変更しました
-- [FIX] ランダムプレイリストのバグ修正 
+- [NEW!!] EasyRPGを導入(emulatorsカテゴリに表示されます)
+- [NEW!!] ALSA headphoneとして認識されるUSB-DACの音量調整に対応
+
+
+
 
 ## 特徴
 ---
 - [FunKeyOS-2.3.0](https://github.com/FunKey-Project/FunKey-OS)ベースで作られたカスタムファームウェアです
+- gmenu2xの日本語化＆ブラック壁紙が利用できるようになりました
+  - RG nanoで快適に動画を再生できるようにリサイズできるソフトウェア　[iPodMe日本語版](https://github.com/game-de-it/RGnano/blob/main/iPodMe.md)の紹介
+  - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
+- 2バイト文字に対応しました(ROMファイルや音楽ファイルなどを日本語のまま利用できます)  
+  - 2バイト文字のROMはスクリーンショット機能が利用できません(調査中) 
+- 音量の調整量を5%刻みに変更しました
 - ffplayで音楽と動画が再生が可能になりました
   - SDカード内の「Media」フォルダに音楽ファイルや動画ファイルをコピーしてください
-  - Mediaフォルダ内の「PlayList」というファイルを再生すると、Mediaフォルダ内にあるファイルから自動的に50曲をランダム再生します
-    - ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、ランダムプレイリスト再生時に停止してしまいます(txtとかm3uなど)
+  - Mediaフォルダ内の「PlayList」というファイルを再生すると、Mediaフォルダ内にあるファイルから自動的に50曲をランダム再生します 
+    - ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、ランダムプレイリスト再生時に停止してしまいます(txtとかm3uなど)  
   - ファイル単体再生時にシーク操作ができるようになりました
   - 情報提供者 [ Twitter : じゅんたろう @GameboyJuntaro ] ありがとうございます！
  ```
@@ -61,9 +70,13 @@ STARTボタン [一時停止]
 ## picoarchエミュレータ情報
 ```
 ●BIOSファイルの格納場所について
-BIOSファイルは /mnt/FunKey/.picoarch/systemフォルダに入れてください
+picoarchのエミュレーターで遊ぶ場合のBIOSファイルは
+ /mnt/FunKey/.picoarch/systemフォルダに入れてください
 
 ●拡張子表
+EasyRPG
+ [exe]
+
 fmsx(MSX)
   [rom,mx1,mx2,dsk,cas]
 
