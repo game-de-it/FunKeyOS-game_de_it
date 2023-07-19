@@ -2,21 +2,16 @@
 
 ## 更新情報
 ---
-- [NEW!!]  新スプラッシュ画面
-  - 提供者 [ Twitter : スネ夫さん @suneon1 ] ありがとうございます！
-  <img src="https://github.com/game-de-it/RGnano/blob/main/asset/game_it.png" width="240">  
-
-- [FIX] gmenu2xの日本語ファイルの修正
-  - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
-- [NEW!!] EasyRPGを導入(emulatorsカテゴリに表示されます)
-- [NEW!!] ALSA headphoneとして認識されるUSB-DACの音量調整に対応
-
-
-
+- [NEW!!] ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできるようになりました
+- [NEW!!] USB-DAC接続中のCPU使用率が大幅に下がりました
+  - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
 
 ## 特徴
 ---
 - [FunKeyOS-2.3.0](https://github.com/FunKey-Project/FunKey-OS)ベースで作られたカスタムファームウェアです
+- 新スプラッシュ画面
+  - 提供者 [ Twitter : スネ夫さん @suneon1 ] ありがとうございます！
+  <img src="https://github.com/game-de-it/RGnano/blob/main/asset/game_it.png" width="240">  
 - gmenu2xの日本語化＆ブラック壁紙が利用できるようになりました
   - RG nanoで快適に動画を再生できるようにリサイズできるソフトウェア　[iPodMe日本語版](https://github.com/game-de-it/RGnano/blob/main/iPodMe.md)の紹介
   - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
@@ -57,7 +52,8 @@ STARTボタン [一時停止]
     -  ゲーム中に電源ボタン→ADVANCED→Options→Emulator options→GB Colorization　で変更できます
     - GBCのパレットはInternal Palette GB　で変更可能です
 -  USB-DACが利用可能
-- 「START+Aボタン」でシャットダウンできるようになりました
+  - ALSA headphoneとして認識されるUSB-DACの音量調整に対応
+- 「START+Aボタン」でシャットダウンできるようになりました  
   - (この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)  
 - RETROFEフロントエンドで利用できるテーマ「RetroRoomCovers」を搭載  
 - picodrive-funkeyベースの「GameGear pico」を搭載
