@@ -42,6 +42,7 @@ STARTボタン [一時停止]
     - Creative BT-W3,BT-W2
     - Gulikit Bluetoothトランスミッター
     - eppfun AK3040
+    - BT-TM800
 - picoarch(retroarchのSDL版)が利用可能になりました
   -  対応エミュ：MSX,NES,SNES,MD,GG,PS1,GB,GBA,PCE,POKEMINI  
      - 32Xは既存のpicodriveを利用してください 
