@@ -2,9 +2,30 @@
 
 ## 更新情報
 ---
-- [NEW!!] ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできるようになりました
-- [NEW!!] USB-DAC接続中のCPU使用率が大幅に下がりました
-  - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
+- [NEW!!] ffplayでプレイリスト再生機能が利用可能になりました
+  - フォルダ内に -PlayList　という空ファイルを置いてください
+    - -PlayListファイルを指定して再生すると、そのフォルダ内にある音楽/動画ファイルを名前順に再生します  
+<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc16.JPG" width="240">  
+
+  - ランダム再生機能はMediaフォルダ直下にある -RND_PlayList ファイルに名前が変更になりました
+    - -RND_PlayListを指定して再生すると、すべてのフォルダから音楽/動画ファイルを50個ランダムで再生します  
+<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc17.JPG" width="240">  
+
+```
+※注意
+ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、再生時に停止してしまいます  
+  (隠しファイルやtxtやm3uなどは消すようにしてください)  
+```
+
+- [NEW!!] picoarchセーブバックアップアプリを追加しました
+  - applicationsタブ内に picoBackup というアプリが追加されます
+```    
+このアプリを実行すると FunKey/.picoarch/data フォルダが FunKey/.picoarch/backup フォルダにコピーされます  
+アップデート実施前や任意のタイミングでこのアプリを実行してバックアップをしてください
+```
+- [FIX] emuタブ内のSNESが起動できないバグを修正
+- [FIX] imgファイルでSDカードにクリーンインストールすると、デフォルトでRetroRoomCoversテーマで起動するように修正
+- [FIX] fwuとimgファイルサイズの最適化をしました
 
 ## 特徴
 ---
@@ -20,7 +41,6 @@
 - 音量の調整量を5%刻みに変更しました
 - ffplayで音楽と動画が再生が可能になりました
   - SDカード内の「Media」フォルダに音楽ファイルや動画ファイルをコピーしてください
-  - Mediaフォルダ内の「PlayList」というファイルを再生すると、Mediaフォルダ内にあるファイルから自動的に50曲をランダム再生します 
     - ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、ランダムプレイリスト再生時に停止してしまいます(txtとかm3uなど)  
   - ファイル単体再生時にシーク操作ができるようになりました
   - 情報提供者 [ Twitter : じゅんたろう @GameboyJuntaro ] ありがとうございます！
@@ -42,7 +62,6 @@ STARTボタン [一時停止]
     - Creative BT-W3,BT-W2
     - Gulikit Bluetoothトランスミッター
     - eppfun AK3040
-    - BT-TM800
 - picoarch(retroarchのSDL版)が利用可能になりました
   -  対応エミュ：MSX,NES,SNES,MD,GG,PS1,GB,GBA,PCE,POKEMINI  
      - 32Xは既存のpicodriveを利用してください 
@@ -53,6 +72,8 @@ STARTボタン [一時停止]
     -  ゲーム中に電源ボタン→ADVANCED→Options→Emulator options→GB Colorization　で変更できます
     - GBCのパレットはInternal Palette GB　で変更可能です
 -  USB-DACが利用可能
+  - ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできます
+    - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
   - ALSA headphoneとして認識されるUSB-DACの音量調整に対応
 - 「START+Aボタン」でシャットダウンできるようになりました  
   - (この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)  
