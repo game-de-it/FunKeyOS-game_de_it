@@ -2,33 +2,14 @@
 
 ## 更新情報
 ---
-- [NEW!!] ffplayでプレイリスト再生機能が利用可能になりました
-  - フォルダ内に -PlayList　という空ファイルを置いてください
-    - -PlayListファイルを指定して再生すると、そのフォルダ内にある音楽/動画ファイルを名前順に再生します  
-<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc16.JPG" width="240">  
-
-  - ランダム再生機能はMediaフォルダ直下にある -RND_PlayList ファイルに名前が変更になりました
-    - -RND_PlayListを指定して再生すると、すべてのフォルダから音楽/動画ファイルを50個ランダムで再生します  
-<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc17.JPG" width="240">  
-
-```
-※注意
-ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、再生時に停止してしまいます  
-  (隠しファイルやtxtやm3uなどは消すようにしてください)  
-```
-
-- [NEW!!] picoarchセーブバックアップアプリを追加しました
-  - applicationsタブ内に picoBackup というアプリが追加されます
-```    
-このアプリを実行すると FunKey/.picoarch/data フォルダが FunKey/.picoarch/backup フォルダにコピーされます  
-アップデート実施前や任意のタイミングでこのアプリを実行してバックアップをしてください
-```
-- [FIX] emuタブ内のSNESが起動できないバグを修正
-- [FIX] imgファイルでSDカードにクリーンインストールすると、デフォルトでRetroRoomCoversテーマで起動するように修正
-- [FIX] fwuとimgファイルサイズの最適化をしました
+- [FIX] USBがOTGモードで動作するようになりましたので正式版としてリリースします
+  - これに伴い、USBマウントとUSB-DACが利用可能になりました
+- [NEW!!] 日本語ファイル名でスナップショットが撮れるようになりました
+- [NEW!!] 新たに一部のUSB-DACで音量調整ができるようになりました
 
 ## 特徴
 ---
+### ●基本情報
 - [FunKeyOS-2.3.0](https://github.com/FunKey-Project/FunKey-OS)ベースで作られたカスタムファームウェアです
 - 新スプラッシュ画面
   - 提供者 [ Twitter : スネ夫さん @suneon1 ] ありがとうございます！
@@ -37,13 +18,26 @@ ffplayに対応していないファイルがフォルダ内に紛れ込んで�
   - RG nanoで快適に動画を再生できるようにリサイズできるソフトウェア　[iPodMe日本語版](https://github.com/game-de-it/RGnano/blob/main/iPodMe.md)の紹介
   - 提供者 [ Twitter : 山田技術部 @Digital_Core ] ありがとうございます！
 - 2バイト文字に対応しました(ROMファイルや音楽ファイルなどを日本語のまま利用できます)  
-  - 2バイト文字のROMはスクリーンショット機能が利用できません(調査中) 
 - 音量の調整量を5%刻みに変更しました
+- 「START+Aボタン」でシャットダウンできるようになりました  
+  - (この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)  
+- RETROFEフロントエンドで利用できるテーマ「RetroRoomCovers」を搭載  
+
+- [システムステータス表示にてバッテリー残量を表示する機能](https://github.com/game-de-it/RGnano/blob/main/battery.md)を搭載  
+- [ゲーム中のスナップショットがゲームのサムネイルになる機能](https://github.com/game-de-it/RGnano/blob/main/snapshot.md)を搭載  
+
+---
+
+### ●ffplay関連
 - ffplayで音楽と動画が再生が可能になりました
   - SDカード内の「Media」フォルダに音楽ファイルや動画ファイルをコピーしてください
-    - ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、ランダムプレイリスト再生時に停止してしまいます(txtとかm3uなど)  
   - ファイル単体再生時にシーク操作ができるようになりました
   - 情報提供者 [ Twitter : じゅんたろう @GameboyJuntaro ] ありがとうございます！
+```
+※注意
+ffplayに対応していないファイルがフォルダ内に紛れ込んでいると、再生時に停止してしまいます  
+  (隠しファイルやtxtやm3uなどは消すようにしてください)  
+```
  ```
 ●ffplayキー操作一覧
 十字キー　↑ [60秒　先にスキップ]
@@ -55,13 +49,22 @@ STARTボタン [一時停止]
 
 ※ランダムプレイリスト再生中は[一時停止]と[再生終了]しか操作ができません
 ```
+- プレイリスト再生機能が利用可能になりました
+  - フォルダ内に [-PlayList]　という名前で空ファイルを置いてください(カッコは必要ありません→[])
+    - [-PlayList]ファイルを指定して再生すると、そのフォルダ内にある音楽/動画ファイルを名前順に再生します  
+<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc16.JPG" width="240">  
 
-- Bluetoothでオーディオ出力が可能になりました  
-  - ボリューム調整はスピーカーやヘッドセット側で行ってください 
-  - 動作確認済みレシーバー 
-    - Creative BT-W3,BT-W2
-    - Gulikit Bluetoothトランスミッター
-    - eppfun AK3040
+  - ランダム再生機能はMediaフォルダ直下にある [-RND_PlayList]というファイルに名前が変更になりました
+    - [-RND_PlayList]ファイルを指定して再生すると、すべてのフォルダから音楽/動画ファイルを50個ランダムで再生します  
+<img src="https://github.com/game-de-it/RGnano/blob/main/asset/sc17.JPG" width="240">  
+
+
+---
+
+### ●エミュレーター関連
+- picodrive-funkeyベースの「GameGear pico」を搭載
+[picodrive-funkey](https://github.com/DrUm78/picodrive-funkey)を利用して新たなエミュレータとして「Game Gear pico」を作成し、既存のGame Gear(mednafen)と共存させています。  
+公式のFunkeyOSではGame Gearでスケーリングを変更できませんでしたが「Game Gear pico」を利用することでGame Gearでもスケーリングが変更可能になります。  
 - picoarch(retroarchのSDL版)が利用可能になりました
   -  対応エミュ：MSX,NES,SNES,MD,GG,PS1,GB,GBA,PCE,POKEMINI  
      - 32Xは既存のpicodriveを利用してください 
@@ -71,22 +74,15 @@ STARTボタン [一時停止]
   - GBパレット(配色)の設定手順
     -  ゲーム中に電源ボタン→ADVANCED→Options→Emulator options→GB Colorization　で変更できます
     - GBCのパレットはInternal Palette GB　で変更可能です
--  USB-DACが利用可能
-  - ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできます
-    - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
-  - ALSA headphoneとして認識されるUSB-DACの音量調整に対応
-- 「START+Aボタン」でシャットダウンできるようになりました  
-  - (この機能を利用してゲーム中にシャットダウンしても、再度電源ONでゲームを再開できます)  
-- RETROFEフロントエンドで利用できるテーマ「RetroRoomCovers」を搭載  
-- picodrive-funkeyベースの「GameGear pico」を搭載
-[picodrive-funkey](https://github.com/DrUm78/picodrive-funkey)を利用して新たなエミュレータとして「Game Gear pico」を作成し、既存のGame Gear(mednafen)と共存させています。  
-公式のFunkeyOSではGame Gearでスケーリングを変更できませんでしたが「Game Gear pico」を利用することでGame Gearでもスケーリングが変更可能になります。  
-- [システムステータス表示にてバッテリー残量を表示する機能](https://github.com/game-de-it/RGnano/blob/main/battery.md)を搭載  
-- [ゲーム中のスナップショットがゲームのサムネイルになる機能](https://github.com/game-de-it/RGnano/blob/main/snapshot.md)を搭載  
+- picoarchセーブバックアップアプリを追加しました
+  - applicationsタブ内に picoBackup というアプリが追加されます
+```    
+このアプリを実行すると FunKey/.picoarch/data フォルダが FunKey/.picoarch/backup フォルダにコピーされます  
+アップデート実施前や任意のタイミングでこのアプリを実行してバックアップをしてください
+```
+---
 
-
-
-## picoarchエミュレータ情報
+### ●picoarchエミュレータ情報
 ```
 ●BIOSファイルの格納場所について
 picoarchのエミュレーターで遊ぶ場合のBIOSファイルは
@@ -127,6 +123,22 @@ snes9x2005(SNES)
   [smc,fig,sfc,gd3,gd7,dx2,bsx,swc,zip]
 
 ```
+---
+
+### ●USBオーディオ関連
+- Bluetoothでオーディオ出力が可能になりました  
+  - ボリューム調整はスピーカーやヘッドセット側で行ってください 
+  - 動作確認済みレシーバー 
+    - Creative BT-W3,BT-W2
+    - Gulikit Bluetoothトランスミッター
+    - eppfun AK3040
+-  USB-DACが利用可能
+  - USB Audio Classに対応した製品なら動作すると思います  
+- ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできます
+  - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
+
+---
+
 
 ##  ●ダウンロード方法や使い方  
 画面右にある「Releases」からダウンロードや使い方を確認できます  
