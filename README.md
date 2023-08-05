@@ -133,10 +133,10 @@ snes9x2005(SNES)
     - Gulikit Bluetoothトランスミッター
     - eppfun AK3040
 -  USB-DACが利用可能
-  - USB Audio Classに対応した製品なら動作すると思います  
+    - USB Audio Classに対応した製品なら動作すると思います  
 - ゲームプレイ中やffplayで音楽再生中にUSB-DACを抜き差しできます
   - 情報提供者 [DrUm78さん](https://github.com/DrUm78)　ありがとうございました！
-
+ 
 ---
 
 
