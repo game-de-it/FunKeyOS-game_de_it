@@ -1,5 +1,6 @@
-# FunKeyOS-game_de_it
-
+# FunKeyOS-game_de_it(最終版)
+[新カスタムOS完成](https://github.com/game-de-it/FunKey-OS)に伴い、こちらのカスタムOSの開発は停止いたします  
+ご愛顧ありがとうございましたm(_ _)m
 ## 更新情報
 ---
 - [FIX] USBがOTGモードで動作するようになりましたので正式版としてリリースします
