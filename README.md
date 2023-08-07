@@ -1,4 +1,4 @@
-# FunKeyOS-game_de_it(最終版)
+# FunKeyOS-game_de_it_3.0.0(最終版)
 [新カスタムOS完成](https://github.com/game-de-it/FunKey-OS)に伴い、こちらのカスタムOSの開発は停止いたします  
 ご愛顧ありがとうございましたm(_ _)m
 ## 更新情報
